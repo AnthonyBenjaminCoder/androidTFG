@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="16:9"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explicación del ejercicio"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvNumSeriesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de series:"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <NumberPicker
+            android:id="@+id/npTotalSeries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnGenerarSeries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generar series"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/containerSeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agrega una nota..."
+            android:inputType="textMultiLine"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnGuardarEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Ejercicio"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="Volver" />
+
+    </LinearLayout>
+</ScrollView>

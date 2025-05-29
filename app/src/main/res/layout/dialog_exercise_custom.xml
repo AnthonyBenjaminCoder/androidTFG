@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewCustom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/dialogContainerCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTotalSeriesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona el número de series:"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal" />
+
+        <NumberPicker
+            android:id="@+id/npTotalSeries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnGenerarSets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/containerSeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvNoteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota (opcional):"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/editTextNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agrega una nota..."
+            android:inputType="textMultiLine"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+    </LinearLayout>
+</ScrollView>

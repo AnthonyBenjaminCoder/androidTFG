@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GymUp</string>
+    <string name="title_home">Ejercicios</string>
+    <string name="title_dashboard">Registro semanal</string>
+    <string name="title_notifications">Iniciar sesión</string>
+    <string name="default_web_client_id">325909304056-86qceuuatm9of4pvp9gp2kdbb44mkn4a</string>
+    <string name="desc_press_banca">Imagen representativa del press de banca</string>
+    <string name="desc_jalon_al_pecho">Imagen representativa del jalón al pecho</string>
+    <string name="desc_press_militar">Imagen representativa del press militar con mancuernas</string>
+    <string name="desc_sentadilla_libre">Imagen representativa de la sentadilla libre</string>
+    <string name="eliminar_set">Eliminar set</string>
+    <string name="copy_serie">Copiar esta serie a todas</string>
+    <string name="delete_serie">Eliminar serie</string>
+</resources>

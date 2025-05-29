@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#F0ECEC"
+        android:queryHint="Buscar ejercicios"
+        app:iconifiedByDefault="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridExercises"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPressBanca"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imgPressBanca"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/press_de_banca2"
+                    android:contentDescription="@string/desc_press_banca" />
+
+                <TextView
+                    android:id="@+id/tvPressBanca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Press de banca"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardJalonAlPecho"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imgJalonAlPecho"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/jalon_al_pecho"
+                    android:contentDescription="@string/desc_jalon_al_pecho" />
+
+                <TextView
+                    android:id="@+id/tvJalonAlPecho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Jalón al pecho"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPressMilitarMancuernas"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imgPressMilitarMancuernas"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/press_militar_con_mancuernas"
+                    android:contentDescription="@string/desc_press_militar" />
+
+                <TextView
+                    android:id="@+id/tvPressMilitarMancuernas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Press militar con mancuernas"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSentadillaLibre"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imgSentadillaLibre"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/sentadilla_libre"
+                    android:contentDescription="@string/desc_sentadilla_libre" />
+
+                <TextView
+                    android:id="@+id/tvSentadillaLibre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="Sentadilla libre"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnIA"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="IA" />
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
