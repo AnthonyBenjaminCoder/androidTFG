@@ -22,7 +22,7 @@ class ChatActivity : AppCompatActivity() {
     private val messages = mutableListOf<Message>()
     private lateinit var adapter: ChatAdapter
 
-    private val apiKey = "AIzaSyCQiKqfI2E0wJp8is59gt-AX_oX_Oo9hTY"
+    private val apiKey = "???????"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
